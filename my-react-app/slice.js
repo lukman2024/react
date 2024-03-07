@@ -1,27 +1,27 @@
-import { configureStore, createSlice } from "@reduxjs/toolkit";
+// import { configureStore, createSlice } from "@reduxjs/toolkit";
 
-// const { configureStore, createAction, createReducer } = toolkit;
+// // const { configureStore, createAction, createReducer } = toolkit;
 
-const cartSlice = createSlice({
-  name: "cart",
-  initialState: [],
-  reducers: {
-    addToCart: (state, action) => {
-      state.push(action.payload);
-    },
-  },
-});
+// const cartSlice = createSlice({
+//   name: "cart",
+//   initialState: [],
+//   reducers: {
+//     addToCart: (state, action) => {
+//       state.push(action.payload);
+//     },
+//   },
+// });
 
-const store = configureStore({
-  reducer: {
-    cart: cartSlice.reducer,
-  },
-});
-console.log("oncreate store : ", store.getState());
+// const store = configureStore({
+//   reducer: {
+//     cart: cartSlice.reducer,
+//   },
+// });
+// console.log("oncreate store : ", store.getState());
 
-store.subscribe(() => {
-  console.log("STORE CHANGE : ", store.getState());
-});
+// store.subscribe(() => {
+//   console.log("STORE CHANGE : ", store.getState());
+// });
 
 // store.dispatch(cartSlice.actions.addToCart({ id: 1, qty: 20 }));
 // store.dispatch(cartSlice.actions.addToCart({ id: 2, qty: 20 }));
