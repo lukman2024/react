@@ -7,6 +7,7 @@ const cartSlice = createSlice({
   },
   reducers: {
     addToCart: (state, action) => {
+      console.log("xxxx", state);
       const itemInCart = state.data.find((item) => item.id === action.payload.id);
       if (itemInCart) {
         itemInCart.qty++;

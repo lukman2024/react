@@ -30,6 +30,6 @@ store.subscribe(() => {
   console.log("STORE CHANGE : ", store.getState());
 });
 
-store.dispatch(addToCart({ id: 1, qty: 20 }));
-store.dispatch(addToCart({ id: 1, qty: 20 }));
+// store.dispatch(addToCart({ id: 1, qty: 20 }));
+// store.dispatch(addToCart({ id: 1, qty: 20 }));
 store.dispatch(login());

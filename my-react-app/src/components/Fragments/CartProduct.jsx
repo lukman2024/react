@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import Button from "../Elements/Button";
 import { useDispatch } from "react-redux";
-import { addToCart } from "../../redux/slices/cartSlice";
+import { addToCart } from "../../slices/cartSlice";
 
 const CardProduct = (props) => {
   const { children } = props;

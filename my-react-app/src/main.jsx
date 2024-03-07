@@ -12,6 +12,7 @@ import { Provider } from "react-redux";
 import store from "./redux/store.js";
 import Navbar from "./components/Layout/Navbar.jsx";
 import DarkModeContexProvider from "./context/DarkMode.jsx";
+import { TotalPriceProvider } from "./context/TotalPriceContex.jsx";
 
 const router = createBrowserRouter([
   {
@@ -45,7 +46,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}>
       <DarkModeContexProvider>
-        <RouterProvider router={router} />
+        <TotalPriceProvider>
+          <RouterProvider router={router} />
+        </TotalPriceProvider>
       </DarkModeContexProvider>
     </Provider>
   </React.StrictMode>
